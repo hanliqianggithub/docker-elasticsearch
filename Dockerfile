@@ -19,6 +19,6 @@
 #FROM docker.elastic.co/elasticsearch/elasticsearch:5.6.3
 FROM docker.elastic.co/elasticsearch/elasticsearch-basic:6.1.0
 COPY config/elasticsearch.yml /usr/share/elasticsearch/config/elasticsearch.yml
-#VOLUME /usr/share/elasticsearch/data
+VOLUME /usr/share/elasticsearch/data
 # Add your elasticsearch plugins setup here
 # Example: RUN elasticsearch-plugin install analysis-icu
